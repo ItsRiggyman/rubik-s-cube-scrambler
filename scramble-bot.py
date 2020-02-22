@@ -9,7 +9,7 @@ def main():
     moves = int(input("Please enter the ammount of moves you would like in your scramble: "))
 
     notation = ["L", "L'", "L2", "R", "R'", "R2", "U", "U'", "U2", "D", "D'", "D2", "F",
-                "F'", "F2", "B", "B'", "B2", "M", "M'", "M2"]
+                "F'", "F2", "B", "B'", "B2"]
 
     for i in range(moves):
         if not bool(scramble):
