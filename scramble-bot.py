@@ -6,7 +6,8 @@ import os
 def main():
     scramble = []
 
-    moves = int(input("Please enter the ammount of moves you would like in your scramble: "))
+    with open("config.json") as f:
+    	moves = int(json.loads(f.read())[0]['moves']) #Reads the preffered move count in the JSON file (default:15)
 
     notation = ["L", "L'", "L2", "R", "R'", "R2", "U", "U'", "U2", "D", "D'", "D2", "F",
                 "F'", "F2", "B", "B'", "B2"]
